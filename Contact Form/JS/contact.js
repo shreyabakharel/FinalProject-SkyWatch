@@ -1,14 +1,14 @@
 // Get all needed elements from the DOM
 const contactForm = document.querySelector("#contact-form");
 const submitBtn = document.querySelector(".submit-btn");
-const nameInput = document.querySelector("#user-name");
-const emailInput = document.querySelector("#user-email");
+const nameInput = document.querySelector("#user_name");
+const emailInput = document.querySelector("#user_email");
 const messageInput = document.querySelector("#message");
 
 // Get data from EmailJS
 const publicKey = "2Kg6tzQvS0Qssv1xU";
 const serviceId = "service_29p3z5t";
-const templateId = "template_z0x4imc";
+const templateId = "template_eu9ucm2";
 
 // Initialize EmailJS with public key
 emailjs.init(publicKey);
@@ -29,7 +29,7 @@ contactForm.addEventListener("submit", event => {
 
     // Send the email
     emailjs.send(serviceId, templateId, inputFields)
-        .then((response) => {
+        .then(() => {
             // Change button text
             submitBtn.innerText = "Message Sent Successfully";
 
