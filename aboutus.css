@@ -1,0 +1,15 @@
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.carousel-item img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
