@@ -11,11 +11,8 @@ flightForm.addEventListener('submit', function(event){
   event.preventDefault()
 
   //values
-  const flightNumberInputValue = document.getElementById('flight-search').value
   const iataInputValue = document.getElementById('IATA-Code').value
-  console.log(iataInputValue)
-  let newFlight = new Flight(flightNumberInputValue, iataInputValue)
-  console.log(newFlight.number)
+  let newFlight = new Flight(iataInputValue)
   fetchDATA(newFlight)
   
 })
