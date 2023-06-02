@@ -1,53 +1,53 @@
-const flightNumberInput = document.getElementById("flight-number");
-const submitButton = document.getElementById("submit");
-const flightInfoContainer = document.getElementById("flight-info");
+// const flightNumberInput = document.getElementById("flight-number");
+// const submitButton = document.getElementById("submit");
+// const flightInfoContainer = document.getElementById("flight-info");
 
-const fetchFlightInfo = async function () {
-  try {
-    const response = await fetch(
-      `https://api.aviationstack.com/v1/flights?access_key=6590386e093c569c9f6b8cd928b15245`
-    );
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log("Error fetching flight information:", error);
-    throw error;
-  }
-};
+// const fetchFlightInfo = async function () {
+//   try {
+//     const response = await fetch(
+//       `https://api.aviationstack.com/v1/flights?access_key=6590386e093c569c9f6b8cd928b15245`
+//     );
+//     const data = await response.json();
+//     return data;
+//   } catch (error) {
+//     console.log("Error fetching flight information:", error);
+//     throw error;
+//   }
+// };
 
-const displayFlightInfo = async function (flight) {
-  try {
-    let data = await fetchFlightInfo(flight);
+// const displayFlightInfo = async function (flight) {
+//   try {
+//     let data = await fetchFlightInfo(flight);
 
-    if (data.pagination.total > 0) {
-      const flightInfo = `
-        <p>Flight Number: ${data.data[0].flight.iata}</p>
-        <p>Departure: ${data.data[0].departure.airport}</p>
-        <p>Arrival: ${data.data[0].arrival.airport}</p>
-      `;
+//     if (data.pagination.total > 0) {
+//       const flightInfo = `
+//         <p>Flight Number: ${data.data[0].flight.iata}</p>
+//         <p>Departure: ${data.data[0].departure.airport}</p>
+//         <p>Arrival: ${data.data[0].arrival.airport}</p>
+//       `;
 
-      flightInfoContainer.innerHTML = flightInfo;
-    } else {
-      flightInfoContainer.textContent = "Flight not found.";
-    } 
-    console.log(data)
-  } catch (error) {
-    flightInfoContainer.textContent =
-      "An error occurred. Please try again later.";
-  }
-};
+//       flightInfoContainer.innerHTML = flightInfo;
+//     } else {
+//       flightInfoContainer.textContent = "Flight not found.";
+//     } 
+//     console.log(data)
+//   } catch (error) {
+//     flightInfoContainer.textContent =
+//       "An error occurred. Please try again later.";
+//   }
+// };
 
-submitButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  const flightNumber = flightNumberInput.value.trim();
+// submitButton.addEventListener("click", function (event) {
+//   event.preventDefault();
+//   const flightNumber = flightNumberInput.value.trim();
 
-  if (!flightNumber) {
-    flightInfoContainer.textContent = "Please enter a flight number.";
-    return;
-  }
+//   if (!flightNumber) {
+//     flightInfoContainer.textContent = "Please enter a flight number.";
+//     return;
+//   }
 
-  displayFlightInfo(flightNumber);
-});
+//   displayFlightInfo(flightNumber);
+// });
 
 
 
