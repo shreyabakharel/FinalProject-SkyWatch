@@ -1,0 +1,58 @@
+.navbar{
+  border-bottom: .5px solid rgba(0, 0, 0, 0.415);
+}
+.navbar-nav {
+  margin-left: auto;
+  font-weight: bold;
+
+}
+.nav-link {
+  color: black;
+}
+.navbar {
+  background-color: white;
+}
+
+.nav-link:hover{
+  color: #FF930F;
+}
+
+#flightNumber {
+  border-radius: 15px;
+  width: 300px;
+  height: 50px;
+}
+
+.iata-search{
+  width: 55%;
+}
+
+form{
+  display: flex;
+  margin-left: 20px;
+}
+
+button{
+  margin-left: 5px;
+  display: inline-block;
+  
+}
+
+
+
+.btn-outline-success{
+ border-color: #FF930F;
+} 
+
+.btn{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
