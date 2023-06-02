@@ -1,3 +1,25 @@
+.navbar-nav {
+    margin-left: auto;
+    font-weight: bold;
+  }
+  .nav-link {
+    color: #3CBAFF;
+  }
+  .navbar {
+    background-color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     font-family: sans-serif;
     background: #3CBAFF
