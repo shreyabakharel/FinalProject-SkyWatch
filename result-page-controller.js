@@ -1,10 +1,15 @@
 class Flight{
-  constructor(number){
-    this._number = number
+  constructor(flightNumber, iata){
+    this._number = flightNumber
+    this._iata = iata
   }
 
-  get number(){
+  get flightnumber(){
     return this._number
+  }
+
+  get iata(){
+    return this._iata
   }
 
   saveToLocalStorage(){
@@ -12,17 +17,28 @@ class Flight{
   }
 
  getLocalStorage(){
-  localStorage.getItem(JSON.parse('number'))
+  if(localStorage.getItem('number')){
+    return JSON.parse(localStorage.getItem('number'))
+  }else{
+    []
+  }
+  
+
  }
   
 }
 
 
 
+
+
+
 const fetchDATA = async (newFlight) =>{
-let data = newFlight.number
-console.log(data)
-let response = await fetch(`https://airlabs.co/api/v9/airlines?name=${data}&api_key=183ae736-f269-4147-a31d-8b9bc99b29b3
+let flightNumber = newFlight.flightnumber
+let iataCode = newFlight.iata
+console.log(flightNumber)
+console.log(iataCode)
+let response = await fetch(`https://airlabs.co/api/v9/routes?airline_iata=${iataCode}&flight_number=${flightNumber}&api_key=183ae736-f269-4147-a31d-8b9bc99b29b3
 `)
 let result = await response.json()
 console.log(result)
