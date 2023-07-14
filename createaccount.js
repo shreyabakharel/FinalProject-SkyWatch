@@ -64,7 +64,7 @@ const postToBackEnd = async (newAccount) => {
       const data = await response.json();
 
       const userid = data.id
-      window.location.href = `/user/{id}`;
+      window.location.href = `/user/${userid}`;
     } else {
       // Request failed
       throw new Error('Request failed');
