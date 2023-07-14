@@ -1,0 +1,17 @@
+
+
+#fname,
+#lname,
+#email,
+#username,
+#password{
+
+  width: 100%;
+}
+#form-group{
+  text-align: center;
+}
+
+#button{
+  margin-top: 10px;
+}
