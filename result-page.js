@@ -76,3 +76,4 @@ if (flightNumber) {
   let newFlight = new Flight(flightNumber);
   fetchDATA(newFlight);
 }
+
