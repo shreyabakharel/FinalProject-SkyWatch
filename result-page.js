@@ -28,6 +28,7 @@ const fetchDATA = async (newFlight) => {
   );
   let result = await response.json();
   console.log(result);
+  
   // Update arrival information
   const arrivalInfoElement = document.querySelector("#arrival-info");
   arrivalInfoElement.innerHTML = `
@@ -47,9 +48,27 @@ const fetchDATA = async (newFlight) => {
     <li class="list-group-item">Scheduled Time: ${result.response.dep_time}</li>
     <li class="list-group-item">Estimated Time: ${result.response.dep_estimated}</li>
   `;
+
+  const flightData = result;
+  fetch('/api/flights', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(flightData),
+  })
+    .then(response => {
+      if (response.ok) {
+        console.log('Flight data sent');
+      } else {
+        console.error('Error sending flight data');
+      }
+    })
+    .catch(error => {
+      console.error('Error sending flight data:', error);
+    });
 };
 
-// Retrieve the flight number from the URL query parameters
 const urlParams = new URLSearchParams(window.location.search);
 const flightNumber = urlParams.get("iataCode");
 
