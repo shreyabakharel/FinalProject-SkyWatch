@@ -51,7 +51,7 @@ class NewUser {
 
 const postToBackEnd = async (newAccount) => {
   try {
-    const response = await fetch('http://localhost:8080/user', {
+    const response = await fetch('http://localhost:8080/user/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ const postToBackEnd = async (newAccount) => {
       const data = await response.json();
 
       const userid = data.id
-      window.location.href = `/user/${userid}`;
+      window.location.href = `http://localhost:8080/user/${userid}`;
     } else {
       // Request failed
       throw new Error('Request failed');
@@ -78,7 +78,7 @@ const postToBackEnd = async (newAccount) => {
 
 
 //event listener 
-document.getElementById('button').addEventListener('form', function(e){
+document.getElementById('button').addEventListener('click', function(e){
   e.preventDefault();
 
   let lastname = document.getElementById('lname').value;
@@ -88,6 +88,8 @@ document.getElementById('button').addEventListener('form', function(e){
   let password = document.getElementById('password').value;
 
   let newAccount = new NewUser(firstname, lastname, email, username, password);
+
+  ;
 
   postToBackEnd(newAccount);
 
