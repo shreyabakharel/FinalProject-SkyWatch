@@ -30,6 +30,10 @@ body {
   height: 50px;
 }
 
+#logo-image {
+  height: 50px;
+}
+
 img {
   size: 100[x];
 }
@@ -63,7 +67,7 @@ img {
   max-width: 100px;
 }
 .btn:hover {
-  background-color: #ffab20 !important;
+  background-color: #2067ff !important;
 }
 
 /* Custom CSS styles */
