@@ -1,81 +1,59 @@
 body {
-  padding: 20px;
+  padding: 0;
+  margin: 0;
   font-family: Arial, sans-serif;
-  background: #3cbaff;
+  background: #3CBAFF;
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 100%;
   padding: 20px;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   color: #333;
+
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   color: #555;
   line-height: 1.5;
 }
 
-/* Carousel Styles */
+.row {
+  margin: 0;
+}
 
-.carousel-item img {
-  max-height: 500px;
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 100%;
   object-fit: cover;
 }
 
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.7);
+.card-body {
   padding: 20px;
-  color: #fff;
 }
 
-.carousel-caption h5 {
+.card-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.carousel-caption p {
-  font-size: 16px;
+.card-text {
+  font-size: 20px;
   margin-bottom: 0;
+
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #333;
-  padding: 10px;
-  border-radius: 50%;
-  opacity: 0.8;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-indicators {
-  bottom: -40px;
-}
-
-.carousel-indicators li {
-  background-color: #999;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-}
-.navbar {
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.415);
-}
 .navbar-nav {
   margin-left: auto;
   font-weight: bold;
@@ -84,37 +62,12 @@ h3 {
 .navbar {
   background-color: white;
 }
-.nav-link {
-  color: black;
+
+.card-img-top {
+  height: 400px; 
+  object-fit: cover;
 }
 
-.nav-link:hover {
-  color: #ff930f;
+.row .card {
+  margin-bottom: 20px;
 }
-
-#logo-image {
-  height: 50px;
-}
-
-#flightNumber {
-  border-radius: 15px;
-  width: 300px;
-  height: 50px;
-}
-/* .carousel-indicators li.active {
-    background-color: #333;
-  } */
-/* h1, h3 {
-    text-align: center;
-}
-
-.carousel-item img {
-    margin: 0 auto;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-.carousel-caption {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333333;
-  } */
