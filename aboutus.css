@@ -1,108 +1,73 @@
 body {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background: #3CBAFF
-}
-  
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  h3 {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.5;
-  }
-  
-  /* Carousel Styles */
-  
-  .carousel-item img {
-    max-height: 500px;
-    object-fit: cover;
-  }
-  
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    color: #fff;
-  }
-  
-  .carousel-caption h5 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .carousel-caption p {
-    font-size: 16px;
-    margin-bottom: 0;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #333;
-    padding: 10px;
-    border-radius: 50%;
-    opacity: 0.8;
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  
-  .carousel-indicators {
-    bottom: -40px;
-  }
-  
-  .carousel-indicators li {
-    background-color: #999;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-  }
-  .navbar-nav {
-    margin-left: auto;
-    font-weight: bold;
-  }
-  /* .nav-link {
-    color: azure;
-  } */
-  .navbar {
-    background-color: white;
-  }
-  #flightNumber {
-    border-radius: 15px;
-    width: 300px;
-    height: 50px;
-  }
-  /* .carousel-indicators li.active {
-    background-color: #333;
-  } */
-/* h1, h3 {
-    text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #3CBAFF;
 }
 
-.carousel-item img {
-    margin: 0 auto;
-    display: block;
-    max-width: 100%;
-    height: auto;
+.container {
+  max-width: 100%;
+  padding: 20px;
 }
-.carousel-caption {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333333;
-  } */
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+
+}
+
+h3 {
+  font-size: 22px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.row {
+  margin: 0;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 20px;
+  margin-bottom: 0;
+
+}
+
+.navbar-nav {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.card-img-top {
+  height: 400px; 
+  object-fit: cover;
+}
+
+.row .card {
+  margin-bottom: 20px;
+}
