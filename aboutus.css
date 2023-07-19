@@ -8,12 +8,13 @@ body {
 .container {
   max-width: 100%;
   padding: 20px;
+  background-color: white;
 }
 
 h1 {
   font-size: 30px;
   font-weight: bold;
-  color: #333;
+  color: black;
 
 }
 
@@ -28,7 +29,7 @@ h3 {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #ffa920;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -40,12 +41,14 @@ h3 {
 
 .card-body {
   padding: 20px;
+  color: #555;
 }
 
 .card-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: black;
 }
 
 .card-text {
@@ -60,7 +63,7 @@ h3 {
 }
 
 .navbar {
-  background-color: white;
+  background-color:white;
 }
 
 .card-img-top {
