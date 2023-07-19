@@ -1,27 +1,27 @@
 class NewUser {
-  constructor(firstname, lastname, email, username, password){
-    this.firstname = firstname,
-    this.lastname = lastname,
+  constructor(firstName, lastName, email, username, password){
+    this.firstName = firstName,
+    this.lastName = lastName,
     this.email = email,
     this.username = username,
     this.password = password
   }
 
-  get getFirstName(){
-    return this.firstname;
+  getFirstName(){
+    return this.firstName;
   }
 
-  set setFirstName(firstname){
-    return this.firstname = firstname;
+  setFirstName(firstName){
+    return this.firstname = firstName;
 
   }
 
   get getLastName(){
-    return this.lastname;
+    return this.lastName;
   }
 
-  set setLastName(lastname){
-    return this.lastname = lastname;
+  set setLastName(lastName){
+    return this.lastName = lastName;
   }
 
   get getEmail(){
